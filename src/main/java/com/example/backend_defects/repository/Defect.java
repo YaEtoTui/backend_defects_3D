@@ -1,4 +1,4 @@
-package com.example.backend_defects.beans;
+package com.example.backend_defects.repository;
 
 import jakarta.persistence.*;
 import lombok.Data;

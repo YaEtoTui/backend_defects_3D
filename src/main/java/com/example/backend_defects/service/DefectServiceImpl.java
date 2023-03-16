@@ -1,5 +1,6 @@
-package com.example.backend_defects.beans;
+package com.example.backend_defects.service;
 
+import com.example.backend_defects.repository.Defect;
 import com.example.backend_defects.repository.DefectsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Primary;

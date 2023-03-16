@@ -1,7 +1,7 @@
 package com.example.backend_defects.controllers;
 
-import com.example.backend_defects.beans.Defect;
-import com.example.backend_defects.beans.DefectService;
+import com.example.backend_defects.repository.Defect;
+import com.example.backend_defects.service.DefectService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,6 +26,7 @@ public class DefectController {
         return  new ResponseEntity<>(defects, HttpStatus.OK);
     }
 
+    //доделать ниже обработчик
     @GetMapping(value = "/defects/{id}")
     public ResponseEntity<Defect> read(@PathVariable(name = "id") int id) {
         final Defect defect = defectService.read(id);

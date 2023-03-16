@@ -1,7 +1,8 @@
-package com.example.backend_defects.beans;
+package com.example.backend_defects.service;
+
+import com.example.backend_defects.repository.Defect;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface DefectService {
 
