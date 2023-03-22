@@ -1,11 +1,13 @@
-package com.example.backend_defects.repository;
+package com.example.backend_defects.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Table(name = "defects")
 @Data
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Defect {
 
     @Id

@@ -1,6 +1,6 @@
-package com.example.backend_defects.controllers;
+package com.example.backend_defects.controller;
 
-import com.example.backend_defects.repository.Defect;
+import com.example.backend_defects.domain.Defect;
 import com.example.backend_defects.service.DefectService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

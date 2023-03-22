@@ -1,7 +1,8 @@
-package com.example.backend_defects.service;
+package com.example.backend_defects.service.impl;
 
-import com.example.backend_defects.repository.Defect;
+import com.example.backend_defects.domain.Defect;
 import com.example.backend_defects.repository.DefectsRepository;
+import com.example.backend_defects.service.DefectService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
