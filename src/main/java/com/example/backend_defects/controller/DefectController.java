@@ -1,6 +1,7 @@
 package com.example.backend_defects.controller;
 
 import com.example.backend_defects.domain.Defect;
+import com.example.backend_defects.domain.DefectResponse;
 import com.example.backend_defects.service.DefectService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -20,16 +21,16 @@ public class DefectController {
 
 
     @GetMapping(value = "/defects")
-    public ResponseEntity<List<Defect>> read() {
-        final List<Defect> defects = defectService.readAll();
+    public ResponseEntity<List<DefectResponse>> read() {
+        final List<DefectResponse> defects = defectService.readAll();
 
         return  new ResponseEntity<>(defects, HttpStatus.OK);
     }
 
     //доделать ниже обработчик
     @GetMapping(value = "/defects/{id}")
-    public ResponseEntity<Defect> read(@PathVariable(name = "id") int id) {
-        final Defect defect = defectService.read(id);
+    public ResponseEntity<DefectResponse> read(@PathVariable(name = "id") int id) {
+        final DefectResponse defect = defectService.read(id);
 
         return new ResponseEntity<>(defect, HttpStatus.OK);
     }
