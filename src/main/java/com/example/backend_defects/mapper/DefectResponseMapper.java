@@ -8,7 +8,6 @@ import java.util.List;
 
 @Component
 public class DefectResponseMapper {
-
     public DefectResponse createDefectResponse(Defect defect) {
         return new DefectResponse(defect.getId(), defect.getText(), defect.getPicture());
     }
