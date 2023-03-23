@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -24,7 +23,7 @@ public class DefectController {
         return  new ResponseEntity<>(defects, HttpStatus.OK);
     }
     @GetMapping(value = "/defects/{id}")
-    public ResponseEntity<DefectResponse> read(@PathVariable(name = "id") int id) throws IOException {
+    public ResponseEntity<DefectResponse> read(@PathVariable(name = "id") int id) {
         final DefectResponse defect = defectService.read(id);
         return new ResponseEntity<>(defect, HttpStatus.OK);
     }
