@@ -37,7 +37,7 @@ public class DefectServiceImpl implements DefectService {
 
     @Override
     public DefectResponse read(int id) {
-        Defect defect = defectsRepository.getOne(id);
+        Defect defect = defectsRepository.findById(id).get();
         return defectResponseMapper.createDefectResponse(defect);
     }
 

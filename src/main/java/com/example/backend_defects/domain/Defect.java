@@ -13,10 +13,14 @@ public class Defect {
     @Id
     @Column(name = "id")
     private Integer id;
-
-    @Column(name = "text")
-    private String text;
-
+    @Column(name = "namedefect")
+    private String nameDefect;
+    @Column(name = "description")
+    private String description;
+    @Column(name = "reasons")
+    private String reasons;
+    @Column(name = "solutions")
+    private String solutions;
     @Column(name = "picture")
     private String picture;
 

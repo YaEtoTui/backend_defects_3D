@@ -9,7 +9,7 @@ import java.util.List;
 @Component
 public class DefectResponseMapper {
     public DefectResponse createDefectResponse(Defect defect) {
-        return new DefectResponse(defect.getId(), defect.getText(), defect.getPicture());
+        return new DefectResponse(defect.getNameDefect(), defect.getDescription(), defect.getReasons(), defect.getSolutions(), defect.getPicture());
     }
 
     public List<DefectResponse> createListDefectResponse(List<Defect> defectList) {
