@@ -14,8 +14,8 @@
   {
     "nameDefect": "nameDefect",
     "description": "description",
-    "description": "description",
     "reasons": "reasons",
+    "solutions": "solutions",
     "picture": "путь до картинки":
   }
 ]
