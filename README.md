@@ -12,8 +12,10 @@
 ```py
 [
   {
-    "id": "id",
-    "text": "text_defect",
+    "nameDefect": "nameDefect",
+    "description": "description",
+    "description": "description",
+    "reasons": "reasons",
     "picture": "путь до картинки":
   }
 ]
