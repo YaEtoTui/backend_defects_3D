@@ -16,7 +16,7 @@
     "description": "description",
     "reasons": "reasons",
     "solutions": "solutions",
-    "picture": "путь до картинки":
+    "picture": "путь до картинки(внутри проекта)":
   }
 ]
 ```
