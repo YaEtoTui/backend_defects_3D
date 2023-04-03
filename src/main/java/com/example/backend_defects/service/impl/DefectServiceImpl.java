@@ -47,8 +47,8 @@ public class DefectServiceImpl implements DefectService {
 
         Defect defect = defectsRepository.findById(id).get();
 
-        Path filePath = Paths.get(defect.getPicture()).normalize();
-
+//        Path filePath = Paths.get(defect.getPicture()).normalize();
+        Path filePath = Paths.get(defect.getPicture()).toAbsolutePath();
         return new UrlResource(filePath.toUri());
     }
 }
