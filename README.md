@@ -3,7 +3,7 @@
 
 | API | Описание | Текст Запроса | Текст ответа |
 | --- | -------- | ------------- | ------------ |
-| GET /api/defects | Получение инфы по дефектам(вместе с картинками) | Нет | List<Defect> |
+| GET /api/defects | Получение инфы по дефектам | Нет | List<Defect> |
 | GET /api/defects/{id} | Получение инфы по дефекту через id | Нет | Defect |
 | GET /api/defects/picture/{id} | Получение изображения | Нет | URL |
 
@@ -16,7 +16,7 @@
     "description": "description",
     "reasons": "reasons",
     "solutions": "solutions",
-    "picture": "путь до картинки":
+    "picture": "путь до картинки(внутри проекта)":
   }
 ]
 ```
