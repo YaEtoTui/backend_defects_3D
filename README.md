@@ -7,6 +7,8 @@
 | GET /api/defects/{id} | Получение инфы по дефекту через id | Нет | Defect |
 | GET /api/defects/picture/{id} | Получение изображения | Нет | URL |
 
+id в диапазоне от 1 до 20(включительно)
+
 # Defect
 
 ```py
